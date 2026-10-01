@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SISIS Darul Hijrah Panceng</title>
   <!-- Favicon SISIS Vektor -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'><defs><linearGradient id='bgGrad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23005fb8'/><stop offset='50%' stop-color='%23003c80'/><stop offset='100%' stop-color='%23059669'/></linearGradient><linearGradient id='domeGrad' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' stop-color='%2310b981'/><stop offset='100%' stop-color='%23047857'/></linearGradient><linearGradient id='goldGrad' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' stop-color='%23facc15'/><stop offset='100%' stop-color='%23eab308'/></linearGradient></defs><rect width='500' height='500' rx='110' fill='url(%23bgGrad)'/><path d='M200 135 C200 100 250 80 250 80 C250 80 300 100 300 135 Z' fill='url(%23domeGrad)' stroke='%23ffffff' stroke-width='8'/><path d='M250 60 L250 75 M245 65 L255 65' stroke='url(%23goldGrad)' stroke-width='5'/><path d='M205 135 Q250 150 295 135 L285 145 Q250 160 215 145 Z' fill='url(%23goldGrad)'/><path d='M140 310 C140 270 180 250 210 250 C240 250 240 280 210 300 C180 320 180 360 220 360 C260 360 300 320 300 270' fill='none' stroke='%23ffffff' stroke-width='38' stroke-linecap='round'/><path d='M150 280 C120 280 100 300 100 325 C100 355 140 380 170 395 C185 375 190 350 180 325 C170 300 155 280 150 280 Z' fill='%23059669' stroke='%23ffffff' stroke-width='6'/><path d='M135 325 H155 M145 315 V335' stroke='%23ffffff' stroke-width='8' stroke-linecap='round'/><rect x='280' y='210' width='90' height='120' rx='16' fill='%23ffffff'/><rect x='310' y='198' width='30' height='16' rx='5' fill='url(%23goldGrad)'/><circle cx='325' cy='280' r='20' fill='%2310b981'/><path d='M315 280 L322 287 L335 273' fill='none' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'><defs><linearGradient id='bgGrad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23005fb8'/><stop offset='50%' stop-color='%23003c80'/><stop offset='100%' stop-color='%23059669'/></linearGradient><linearGradient id='domeGrad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%2310b981'/><stop offset='100%' stop-color='%23047857'/></linearGradient><linearGradient id='goldGrad' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' stop-color='%23facc15'/><stop offset='100%' stop-color='%23eab308'/></linearGradient></defs><rect width='500' height='500' rx='110' fill='url(%23bgGrad)'/><path d='M200 135 C200 100 250 80 250 80 C250 80 300 100 300 135 Z' fill='url(%23domeGrad)' stroke='%23ffffff' stroke-width='8'/><path d='M250 60 L250 75 M245 65 L255 65' stroke='url(%23goldGrad)' stroke-width='5'/><path d='M205 135 Q250 150 295 135 L285 145 Q250 160 215 145 Z' fill='url(%23goldGrad)'/><path d='M140 310 C140 270 180 250 210 250 C240 250 240 280 210 300 C180 320 180 360 220 360 C260 360 300 320 300 270' fill='none' stroke='%23ffffff' stroke-width='38' stroke-linecap='round'/><path d='M150 280 C120 280 100 300 100 325 C100 355 140 380 170 395 C185 375 190 350 180 325 C170 300 155 280 150 280 Z' fill='%23059669' stroke='%23ffffff' stroke-width='6'/><path d='M135 325 H155 M145 315 V335' stroke='%23ffffff' stroke-width='8' stroke-linecap='round'/><rect x='280' y='210' width='90' height='120' rx='16' fill='%23ffffff'/><rect x='310' y='198' width='30' height='16' rx='5' fill='url(%23goldGrad)'/><circle cx='325' cy='280' r='20' fill='%2310b981'/><path d='M315 280 L322 287 L335 273' fill='none' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome CDN -->
@@ -637,7 +637,7 @@
     </div>
   </div>
 
-  <!-- MODAL FORM IZIN -->
+  <!-- MODAL FORM IZIN (DENGAN INPUT TANGGAL TIBA DI PONDOK) -->
   <div id="modal-izin" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-lg w-full p-6 shadow-2xl max-h-[90vh] overflow-y-auto space-y-4">
       <div class="flex justify-between items-center border-b pb-3 border-slate-200 dark:border-slate-700">
@@ -680,10 +680,18 @@
             <input type="datetime-local" id="form-izin-tgl-keluar" required class="w-full p-2.5 rounded-xl border border-slate-300 dark:border-slate-600 dark:bg-slate-700 text-slate-800 dark:text-white">
           </div>
           <div>
-            <label class="block font-semibold mb-1">Batas Tanggal & Jam Kembali</label>
+            <label class="block font-semibold mb-1">Batas Rencana Kembali</label>
             <input type="datetime-local" id="form-izin-tgl-kembali" required class="w-full p-2.5 rounded-xl border border-slate-300 dark:border-slate-600 dark:bg-slate-700 text-slate-800 dark:text-white">
           </div>
         </div>
+        
+        <!-- KOLOM TANGGAL TIBA DI PONDOK (BISA DIATUR/DIKOSONGKAN SAAT EDIT) -->
+        <div class="p-3 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 rounded-2xl space-y-1">
+          <label class="block font-bold text-emerald-800 dark:text-emerald-400">Realisasi Waktu Tiba di Pondok (Opsional / Saat Santri Tiba)</label>
+          <input type="datetime-local" id="form-izin-tgl-tiba" class="w-full p-2.5 rounded-xl border border-emerald-400 focus:ring-2 focus:ring-brand-500 dark:bg-slate-700 text-slate-800 dark:text-white font-mono">
+          <p class="text-[10px] text-slate-500 italic">*Kosongkan jika santri belum kembali. Jika santri sudah datang di tanggal lampau, pilih tanggal & jamnya di sini.</p>
+        </div>
+
         <div>
           <label class="block font-semibold mb-1">Nama & Kontak Penjemput</label>
           <input type="text" id="form-izin-penjemput" class="w-full p-2.5 rounded-xl border border-slate-300 dark:border-slate-600 dark:bg-slate-700 text-slate-800 dark:text-white">
@@ -696,7 +704,7 @@
     </div>
   </div>
 
-  <!-- MODAL FORM CHECK-IN KEDATANGAN DENGAN PEMILIH TANGGAL DAN JAM -->
+  <!-- MODAL KHUSUS CHECK-IN KEDATANGAN (MEMUNCULKAN KALENDER & JAM BEBAS) -->
   <div id="modal-checkin" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-sm w-full p-6 shadow-2xl space-y-4">
       <div class="flex justify-between items-center border-b pb-3 border-slate-200 dark:border-slate-700">
@@ -717,9 +725,9 @@
         </div>
         <div>
           <label class="block font-semibold mb-1 text-brand-700 dark:text-brand-400">Pilih Tanggal & Jam Tiba Santri</label>
-          <!-- INPUT PICKER TANGGAL, BULAN, TAHUN & JAM MENIT -->
-          <input type="datetime-local" id="checkin-waktu-tiba" required class="w-full p-2.5 rounded-xl border border-brand-500 dark:border-brand-500 dark:bg-slate-700 text-slate-800 dark:text-white font-mono focus:ring-2 focus:ring-brand-500">
-          <p class="text-[10px] text-slate-400 mt-1">*Klik ikon kalender/jam untuk mengatur waktu kedatangan riil.</p>
+          <!-- INPUT PICKER KALENDER & JAM -->
+          <input type="datetime-local" id="checkin-waktu-tiba" required class="w-full p-2.5 rounded-xl border-2 border-brand-500 dark:bg-slate-700 text-slate-800 dark:text-white font-mono focus:ring-2 focus:ring-brand-500">
+          <p class="text-[10px] text-slate-400 mt-1">*Bisa dimundurkan ke tanggal/jam saat santri sebenarnya sampai.</p>
         </div>
         <div class="pt-3 flex justify-end space-x-2">
           <button type="button" onclick="closeModal('modal-checkin')" class="px-4 py-2 rounded-xl border font-bold">Batal</button>
@@ -777,7 +785,7 @@
     </div>
   </div>
 
-  <!-- MODAL FORM MASTER SANTRI (JENJANG DIGANTI SMK) -->
+  <!-- MODAL FORM MASTER SANTRI (JENJANG SMK) -->
   <div id="modal-santri" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-lg w-full p-6 shadow-2xl max-h-[90vh] overflow-y-auto space-y-4">
       <div class="flex justify-between items-center border-b pb-3 border-slate-200 dark:border-slate-700">
@@ -863,7 +871,7 @@
         </div>
         <div class="pt-4 grid grid-cols-3 text-center text-[9px] items-end">
           <div>
-            <p class="text-[8px] leading-tight">Gresik, <span id="prev-tgl-cetak">1 September 2026</span></p>
+            <p class="text-[8px] leading-tight">Gresik, <span id="prev-tgl-cetak">1 Oktober 2026</span></p>
             <p class="font-bold mt-1">Musyrif</p>
             <div class="h-12 flex items-center justify-center overflow-hidden" id="prev-container-ttd"></div>
             <div style="display: inline-block; border-bottom: 1.5px solid #0f172a; padding-bottom: 1px;">
@@ -1323,7 +1331,7 @@
       
       filtered.forEach(item => {
         const actionBtn = item.statusSantri === 'Terlambat Kembali' 
-          ? `<span class="text-rose-600 font-bold text-[10px]">Telah Kembali (Terlambat)</span>`
+          ? `<button onclick="checkinSantri('${item.id}')" class="text-rose-600 hover:underline font-bold text-[10px]">Telah Kembali (Terlambat)</button>`
           : `<button onclick="checkinSantri('${item.id}')" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-3 py-1 rounded-lg text-[10px]">Konfirmasi Kembali</button>`;
 
         tbody.innerHTML += `
@@ -1372,10 +1380,10 @@
           badgeColor = 'bg-emerald-100 text-emerald-700';
         }
 
-        // Tampilan interaktif tombol pilih tanggal & jam kedatangan
+        // Kolom Waktu Tiba di Pondok dibuat tombol yang memanggil modal kalender & jam
         const tibaHtml = item.tglRealisasiKembali 
           ? `<button onclick="checkinSantri('${item.id}')" class="text-left font-mono font-bold text-emerald-600 dark:text-emerald-400 hover:underline flex items-center gap-1.5" title="Klik untuk mengubah jam kedatangan"><i class="fa-solid fa-circle-check text-xs"></i> <span>${formatDateTimeString(item.tglRealisasiKembali)}</span></button>` 
-          : `<button onclick="checkinSantri('${item.id}')" class="text-[11px] px-2.5 py-1 bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-400 hover:bg-amber-100 border border-amber-300 dark:border-amber-700 rounded-lg font-semibold flex items-center gap-1.5 shadow-sm transition" title="Klik untuk memilih tanggal & jam tiba di pondok"><i class="fa-regular fa-clock"></i> <span>Catat Waktu Tiba</span></button>`;
+          : `<button onclick="checkinSantri('${item.id}')" class="text-[11px] px-2.5 py-1 bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-400 hover:bg-amber-100 border border-amber-300 dark:border-amber-700 rounded-lg font-semibold flex items-center gap-1.5 shadow-sm transition" title="Klik untuk memilih tanggal & jam tiba di pondok"><i class="fa-regular fa-clock"></i> <span>Belum Tiba</span></button>`;
 
         tbody.innerHTML += `
           <tr>
@@ -1388,7 +1396,7 @@
             <td class="p-3"><span class="px-2 py-0.5 rounded-full text-[10px] ${badgeColor}">${statusDisplay}</span></td>
             <td class="p-3 text-center space-x-1">
               <button onclick="previewSurat('${item.id}')" class="p-1.5 bg-slate-100 dark:bg-slate-700 hover:bg-brand-600 hover:text-white rounded-lg text-slate-600 dark:text-slate-200 transition" title="Cetak Surat"><i class="fa-solid fa-print"></i></button>
-              <button onclick="checkinSantri('${item.id}')" class="p-1.5 bg-brand-100 text-brand-700 hover:bg-brand-600 hover:text-white rounded-lg transition" title="Atur Kedatangan"><i class="fa-solid fa-house-user"></i></button>
+              <button onclick="checkinSantri('${item.id}')" class="p-1.5 bg-brand-100 text-brand-700 hover:bg-brand-600 hover:text-white rounded-lg transition" title="Atur / Catat Kedatangan"><i class="fa-solid fa-house-user"></i></button>
               <button onclick="editIzin('${item.id}')" class="p-1.5 bg-amber-100 text-amber-700 hover:bg-amber-600 hover:text-white rounded-lg transition" title="Edit Data"><i class="fa-solid fa-pen-to-square"></i></button>
               <button onclick="deleteIzin('${item.id}')" class="p-1.5 bg-rose-100 text-rose-700 hover:bg-rose-600 hover:text-white rounded-lg transition" title="Hapus Data"><i class="fa-solid fa-trash-can"></i></button>
             </td>
@@ -1487,6 +1495,7 @@
     window.openModalIzin = function() {
       document.getElementById('form-izin-edit-id').value = '';
       document.getElementById('modal-izin-title').innerText = "Form Pengajuan Surat Izin Santri";
+      document.getElementById('form-izin-tgl-tiba').value = '';
       document.getElementById('modal-izin').classList.remove('hidden');
     };
 
@@ -1498,12 +1507,13 @@
       document.getElementById('form-izin-alasan').value = item.alasan || '';
       document.getElementById('form-izin-tgl-keluar').value = item.tglKeluar || '';
       document.getElementById('form-izin-tgl-kembali').value = item.tglKembali || '';
+      document.getElementById('form-izin-tgl-tiba').value = item.tglRealisasiKembali || '';
       document.getElementById('form-izin-penjemput').value = item.penjemput || '';
       
       const santri = mockSantri.find(s => s.nis === item.nis);
       if (santri) document.getElementById('form-izin-santri').value = santri.id;
       autofillSantriIzin();
-      window.openModalIzin();
+      document.getElementById('modal-izin').classList.remove('hidden');
     };
 
     window.deleteIzin = async function(id) {
@@ -1524,6 +1534,14 @@
       const santri = mockSantri.find(s => s.id === santriId);
       if (!santri) return;
 
+      const tglKembali = document.getElementById('form-izin-tgl-kembali').value;
+      const tglTiba = document.getElementById('form-izin-tgl-tiba').value;
+
+      let statusSantri = 'Sedang Izin';
+      if (tglTiba) {
+        statusSantri = (tglTiba > tglKembali) ? 'Terlambat Kembali' : 'Telah Kembali';
+      }
+
       const payload = {
         nis: santri.nis,
         nama: santri.nama,
@@ -1531,17 +1549,15 @@
         kamar: santri.kamar,
         alasan: document.getElementById('form-izin-alasan').value,
         tglKeluar: document.getElementById('form-izin-tgl-keluar').value,
-        tglKembali: document.getElementById('form-izin-tgl-kembali').value,
+        tglKembali: tglKembali,
+        tglRealisasiKembali: tglTiba || '',
         penjemput: document.getElementById('form-izin-penjemput').value || 'Mandiri',
         statusApproval: 'Disetujui',
-        statusSantri: 'Sedang Izin',
-        tglRealisasiKembali: ''
+        statusSantri: statusSantri
       };
 
       try {
         if (editId) {
-          delete payload.statusSantri;
-          delete payload.tglRealisasiKembali;
           await window.fsUpdateDoc(window.fsDoc(window.db, "izin", editId), payload);
           showToast('Data perizinan berhasil diperbarui!', 'success');
         } else {
@@ -1555,7 +1571,7 @@
       }
     };
 
-    // BUKA MODAL PILIH TANGGAL & JAM KEDATANGAN
+    // BUKA POPUP MODAL KALENDER & JAM UNTUK CHECKIN SANTRI
     window.checkinSantri = function(id) {
       const item = mockIzin.find(i => i.id === id);
       if (!item) return;
@@ -1564,6 +1580,7 @@
       document.getElementById('checkin-nama').value = `${item.nama} (${item.nis})`;
       document.getElementById('checkin-batas').value = formatDateTimeString(item.tglKembali);
 
+      // Default jika sudah ada waktu tiba sebelumnya pakai waktu itu, jika belum pakai waktu sekarang
       const now = new Date();
       const pad = (n) => String(n).padStart(2, '0');
       const nowStr = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
@@ -1572,7 +1589,7 @@
       document.getElementById('modal-checkin').classList.remove('hidden');
     };
 
-    // SIMPAN WAKTU KEDATANGAN MANUAL DENGAN VALIDASI WAKTU
+    // SIMPAN WAKTU KEDATANGAN DARI POPUP
     window.simpanCheckinManual = async function(e) {
       if (e) e.preventDefault();
       const id = document.getElementById('checkin-izin-id').value;
